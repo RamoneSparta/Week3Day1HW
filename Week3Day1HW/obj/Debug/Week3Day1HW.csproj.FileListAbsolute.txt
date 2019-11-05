@@ -1,0 +1,6 @@
+C:\Users\Ramone Nelson\Engineering45\Week3\Day1\Week3Day1HW\Week3Day1HW\obj\Debug\Week3Day1HW.csprojAssemblyReference.cache
+C:\Users\Ramone Nelson\Engineering45\Week3\Day1\Week3Day1HW\Week3Day1HW\bin\Debug\Week3Day1HW.exe.config
+C:\Users\Ramone Nelson\Engineering45\Week3\Day1\Week3Day1HW\Week3Day1HW\bin\Debug\Week3Day1HW.exe
+C:\Users\Ramone Nelson\Engineering45\Week3\Day1\Week3Day1HW\Week3Day1HW\bin\Debug\Week3Day1HW.pdb
+C:\Users\Ramone Nelson\Engineering45\Week3\Day1\Week3Day1HW\Week3Day1HW\obj\Debug\Week3Day1HW.exe
+C:\Users\Ramone Nelson\Engineering45\Week3\Day1\Week3Day1HW\Week3Day1HW\obj\Debug\Week3Day1HW.pdb
