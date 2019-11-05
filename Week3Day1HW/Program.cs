@@ -32,6 +32,11 @@ namespace Week3Day1HW
 
     class GameIdeas
     {
+        public GameIdeas()
+        {
+
+        }
+
         public void GameChoices()
         {
             int choice = GetUserInput();
@@ -81,7 +86,7 @@ namespace Week3Day1HW
             }
             finally
             {
-                Console.WriteLine("Thats my game ideas");
+                Console.WriteLine("These are my game ideas");
             }
             }
 
