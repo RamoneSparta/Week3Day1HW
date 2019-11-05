@@ -35,7 +35,10 @@ namespace Week3Day1HW
         public void GameChoices()
         {
             int choice = GetUserInput();
- 
+
+            try
+            {
+
                 switch (choice)
                 {
                     case 1:
@@ -45,7 +48,7 @@ namespace Week3Day1HW
                             Console.WriteLine("You get upgrades and weapons as you play,");
                             Console.WriteLine("And once a player wins, the game is over");
                             Console.ReadLine();
-                            
+
                             break;
                         }
 
@@ -64,17 +67,24 @@ namespace Week3Day1HW
                         break;
 
 
-                default:
-                    Console.WriteLine("If all fails, I'd go with a text-based console game");
-                    Console.WriteLine("It wouls just be there to show my basic capabilities");
-                    Console.WriteLine("But I could try to save it with satire or a special feature");
-                    Console.ReadLine();
-                    break;
+                    default:
+                        Console.WriteLine("If all fails, I'd go with a text-based console game");
+                        Console.WriteLine("It wouls just be there to show my basic capabilities");
+                        Console.WriteLine("But I could try to save it with satire or a special feature");
+                        Console.ReadLine();
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Thats my game ideas");
             }
             }
 
-
-        
 
         public int GetUserInput()
         {
