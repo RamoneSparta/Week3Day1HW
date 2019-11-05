@@ -10,20 +10,26 @@ namespace Week3Day1HW
     {
         static void Main(string[] args)
         {
+            bool str = true;
             GameIdeas gameIdeas = new GameIdeas();
-            try
+            while (str == true)
             {
-                gameIdeas.GameChoices();
-            }
-            catch (Exception ex)
-            {
+                try
+                {
+                    gameIdeas.GameChoices();
+                    str = false;
+                    
+                }
+                catch (Exception ex)
+                {
 
-                Console.WriteLine(ex.Message);
-                Console.ReadLine();
-            }
-            finally
-            {
-                Console.WriteLine("Thank you, I hope these ideas were good");
+                    Console.WriteLine(ex.Message);
+                    
+                }
+                finally
+                {
+                    Console.WriteLine("This will run again if you do not enter a number");
+                }
             }
         }
 
@@ -41,21 +47,17 @@ namespace Week3Day1HW
         {
             int choice = GetUserInput();
 
-            try
-            {
 
                 switch (choice)
                 {
                     case 1:
-                        {
-                            Console.WriteLine("This is the first game:");
-                            Console.WriteLine("This game is a 2 player shooter Vs game.");
-                            Console.WriteLine("You get upgrades and weapons as you play,");
-                            Console.WriteLine("And once a player wins, the game is over");
-                            Console.ReadLine();
-
-                            break;
-                        }
+                        Console.WriteLine("This is the first game:");
+                        Console.WriteLine("This game is a 2 player shooter Vs game.");
+                        Console.WriteLine("You get upgrades and weapons as you play,");
+                        Console.WriteLine("And once a player wins, the game is over");
+                        Console.ReadLine();
+                        break;
+                        
 
                     case 2:
                         Console.WriteLine("The second game, This game is a matching game");
@@ -80,20 +82,13 @@ namespace Week3Day1HW
                         break;
                 }
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            finally
-            {
-                Console.WriteLine("These are my game ideas");
-            }
-            }
+
+            
 
 
         public int GetUserInput()
         {
-            return Console.Read();
+            return int.Parse(Console.ReadLine());
         }
     }
 }
